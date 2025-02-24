@@ -25,8 +25,8 @@ namespace OnlineLearningServices.CategoryServices
 
             return courses.Select(x => new CourseCategoryDto()
             {
-                CategoryId = x.CategoryId, 
-                CategoryName = x.CategoryName, 
+                CategoryId = x.CategoryId,
+                CategoryName = x.CategoryName,
                 Description = x.Description
             }).ToList();
         }

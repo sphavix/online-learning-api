@@ -1,4 +1,5 @@
-﻿using OnlineLearningCore.Domain.Entities;
+﻿
+using OnlineLearningCore.Domain.Entities;
 
 namespace OnlineLearningCore.Abstracts
 {

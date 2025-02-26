@@ -7,7 +7,8 @@ namespace OnlineLearningPersistence.Repositories
 {
     public class CourseRepository(OnlineCourseDbContext context) : ICourseRepository
     {
-        private readonly OnlineCourseDbContext _context = context ?? throw new ArgumentNullException(nameof(context));
+        private readonly OnlineCourseDbContext _context = context 
+            ?? throw new ArgumentNullException(nameof(context));
 
         public async Task<List<CourseDto>> GetCoursesAsync(int? categoryId = null)
         {

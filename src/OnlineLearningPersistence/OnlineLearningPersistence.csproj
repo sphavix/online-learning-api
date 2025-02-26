@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineLearningCore\OnlineLearningCore.csproj" />
-    <ProjectReference Include="..\OnlineLearningServices\OnlineLearningServices.csproj" />
   </ItemGroup>
 
 </Project>

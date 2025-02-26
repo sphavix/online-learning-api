@@ -5,7 +5,8 @@ namespace OnlineLearningServices.CategoryServices
 {
     public class CourseCategoryService(ICourseCategoryRepository courseCategory) : ICourseCategoryService
     {
-        private readonly ICourseCategoryRepository _courseCategory = courseCategory;
+        private readonly ICourseCategoryRepository _courseCategory = courseCategory 
+            ?? throw new ArgumentNullException(nameof(courseCategory));
 
         public async Task<CourseCategoryDto?> GetCategoryById(int id)
         {

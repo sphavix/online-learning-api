@@ -3,6 +3,7 @@ using OnlineLearningCore.Abstracts;
 using OnlineLearningPersistence.Persistence;
 using OnlineLearningPersistence.Repositories;
 using OnlineLearningServices.CategoryServices;
+using OnlineLearningServices.CourseServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,8 @@ builder.Services.AddDbContext<OnlineCourseDbContext>(options =>
 
 builder.Services.AddScoped<ICourseCategoryRepository, CourseCategoryRepository>();
 builder.Services.AddScoped<ICourseCategoryService, CourseCategoryService>();
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+builder.Services.AddScoped<ICourseService, CourseService>();
 
 var app = builder.Build();
 
